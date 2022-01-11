@@ -48,10 +48,12 @@ function calculator(){
                     stack.push(secondPop / firstPop)
                 }
             } 
-            //if all cases fail it means the input either contained more than just numbers
-            //or there was less or equal to 1 number which calculations can not be done on
-            else {
-                console.log("Make sure to have at least 2 numbers to make calculations with. \n Please do not insert any letters or symbols besides + - * /\n");
+            //else if case for when input either contained more than just numbers,
+            //there was less or equal to 1 number which calculations can not be done on
+            // or arithmetic signs where between the numbers
+            //also taking care of white space again at the end
+            else if(value != "") {
+                console.log("\n Make sure to have at least 2 numbers to make calculations with. \n Please do not insert any letters or symbols besides + - * /\n Please leave a space between the arithmetic operator and the numbers \n");
             }
             
         });
@@ -60,7 +62,7 @@ function calculator(){
             return stack[stack.length - 1];
         }
         //final error check if all goes wrong
-        return "Error, Something went wrong. Please exit or empty calculator to try again\n"
+        return "Invalid input \n"
     }
 }
 
@@ -70,7 +72,7 @@ function calculator(){
 var ms = new calculator;
 var stack = []
 
-console.log ('\n',"Welcome to the calculator.",'\n',"In order to use it, please insert your numbers and then the operators '+,-,*,/'", '\n', "To exit, type either one of these commandes: 'q' 'exit' '^c' 'clear'", '\n')
+console.log ('\n',"Welcome to the calculator.",'\n',"In order to use it, please insert your numbers and then the operators '+,-,*,/'", '\n', "To exit, type either one of these commandes: 'q' 'exit' '^c' 'clear'", '\n', "to empty the calculator for a new start type 'empty' \n")
 
 //while loop for continues input until we use one of the exit words
 while(true){
@@ -87,7 +89,7 @@ while(true){
     //else if case to empty the stack array for new inputs
     else if(user_input.toUpperCase() === "EMPTY" ) {
         stack = [];
-        console.log("the calculator has been cleared. Please insert numbers")
+        console.log("the calculator has been cleared. Please insert new numbers")
     }
     //else if case to return message if user enters while nothing has been inputted
     else if(user_input === "") {
