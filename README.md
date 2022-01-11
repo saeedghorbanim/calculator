@@ -6,6 +6,6 @@ In order to run the program you will be need to download and install Node.js on 
 the Node package manager which is "npm" installed on your computer. In order to check if you have "node" and "npm" installed
 on your computer, you can go to your terminal/command-line and type:
 
-D:\calculator> node -- version
+```D:\myComputer> node -- version
 
-D:\calculator> npm -- version
+D:\myComputer> npm -- version```
