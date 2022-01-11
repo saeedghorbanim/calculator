@@ -16,3 +16,5 @@ the terminal, cd to the folder and type:
 ``` calculator$ node app.js```
 
 in order to run the program.
+
+## Description
