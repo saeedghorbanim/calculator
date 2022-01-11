@@ -66,7 +66,7 @@ function calculator(){
 
 
 
-//creating an object of the function to use in while loop
+//creating an object of the calculator function to use in while loop
 var ms = new calculator;
 var stack = []
 
@@ -93,7 +93,7 @@ while(true){
     else if(user_input === "") {
         console.log("You have not inputted anything \n\ please input a number")
     }
-    //enters the function in the object with the user's given input
+    //enters the solving_function function in the calculator object (ms) with the user's given input
     else {
         console.log(ms.solving_function(user_input))
     }
