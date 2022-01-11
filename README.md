@@ -17,4 +17,6 @@ the terminal, cd to the folder and type:
 
 in order to run the program.
 
-## Description
+## Description 
+The RPN calculator was a bit challenging, especially error testing it. Since it was not a huge project, I figured I code it entirely in one file; unless needed maximum two. I started off with the function in order to work on the algorithms first. As I went on, I decided to code the part which can obtain input from the user from the terminal. In order for the program to keep going, I decided to go with an infinite while loop unless needed exiting by some commands. I noticed I can filter some of the errors in the while loop before reaching the function itself to make it easier. Lastly, left an error message at the end of the function so if all goes wrong the program doesn't crash and instead return the error message. 
+Some trade-offs that I had to do was spending most of my time in making sure the program works and cutting of time from the user experience and the presentation of the program. If more time was available, I would try to fix the interface a bit more and make it more clean and friendly to use and also try to create more cases in order to test the code and reply messages in a more clear way to the user. 
